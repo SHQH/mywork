@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 去掉边缘距离 */
+
+.DivMain {
+    background-color: #dedede;
+}
+
+.DivHead {
+    width: 100%;
+    height: 80px;
+    background-color: #333333;
+    position: relative;
+}
+
+.DivHead img {
+    height: 80px;
+    margin-top: -10px;
+}
+
+.DivHeadMenu {
+    position: relative;
+    margin-right: 20px;
+    float: right;
+    height: auto;
+    margin-top: 30px;
+    background-color: #333333;
+}
+
+.DivHeadMenu ul li {
+    float: left;
+    margin-left: 20px;
+}
+
+.DivHeadMenu a {
+    color: white;
+    text-decoration: none;
+}
+
+.DivHeadMenu a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.DivFirstP {
+    padding: 30px;
+    margin: 20px;
+    border: 1px solid #999;
+    height: auto;
+    position: relative;
+    background-color: #FFF;
+    box-shadow: 2px 2px 1px 1px #9f9f9f;
+}
+
+.DivFirstP,
+.DivSecondP h3 {
+    color: #333;
+}
+
+.DivFirstP,
+.DivSecondP span {
+    font-size: 0.85em;
+}
+
+.DivSecondP {
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 2px 2px 1px 1px #9f9f9f;
+    border: 1px solid #999;
+    height: auto;
+    position: relative;
+    background-color: #FFF;
+}
+
+.DivPic {
+    box-shadow: 2px 2px 1px 1px #9f9f9f;
+    padding: 30px;
+    margin: 20px;
+    border: 1px solid #999;
+    height: auto;
+    position: relative;
+    background-color: #FFF;
+}
+
+.DicPicRec {
+    border: 1px solid #999;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    margin: 0 0 10px 80px;
+    padding-top: 10px;
+}
+
+.DicPicRec img {
+    padding: 10px;
+    width: 180px;
+}
+
+.DivSecondP ul {
+    margin-left: 20px;
+}
+
+.DivLastP {
+    box-shadow: 2px 2px 1px 1px #9f9f9f;
+    padding: 30px;
+    margin: 20px;
+    border: 1px solid #999;
+    height: auto;
+    position: relative;
+    background-color: #FFF;
+}
+
+.DivLastP ol {
+    margin: 10px 0 10px 50px;
+}
+
+.DivLastP ol li {
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.DivLastP .TbLastP {
+    border: solid 1px #CCC;
+    border-collapse: collapse;
+    width: 900px;
+    margin: 20px 0 20px 20px;
+}
+
+.DivLastP .TbLastP .TbTitile {
+    background-color: #666;
+    color: white;
+}
+
+.DivLastP .TbLastP .TbEnd {
+    background-color: #CCC;
+    color: white;
+}
+
+.DivLastP .TbLastP td {
+    border: solid 1px #CCC;
+}
+
+.DivEndInput {
+    box-shadow: 2px 2px 1px 1px #9f9f9f;
+    padding: 30px;
+    margin: 20px;
+    border: 1px solid #999;
+    height: 600px;
+    position: relative;
+    background-color: #FFF;
+}
+
+.DivEndInputContent {
+    width: 60%;
+    height: auto;
+    /*border:1px solid #999;*/
+    margin: 20px 0 20px 200px;
+    position: relative;
+    line-height: 25px;
+}
+
+.DivEndInputContent textarea {
+    width: 400px;
+    height: 150px;
+    margin-left: 120px;
+}
+
+.DivEndInputContent p {
+    margin-left: 120px;
+}
+
+.DivEndInputContent .FontInputText {
+    padding-left: 80px;
+}
+
+.DivEndInputContent .FontInputText1 {
+    padding-left: 80px;
+}
+
+.DivEndInputContent .FontInputText2 {
+    padding-left: 32px;
+}
+
+.DivEndInputContent .FontInputText3 {
+    padding-left: 45px;
+}
+
+.DivEndInputContent .BtnSub {
+    width: 100%;
+    background-color: #06F;
+    border: none;
+    height: 30px;
+    margin: 20px 0;
+    color: #FFF;
+    font-size: 16px;
+    font-family: Tahoma, Geneva, sans-serif;
+    border-radius: 15px;
+}
+
+.DivFoot {
+    height: 60px;
+    position: relative;
+    background-color: #000000;
+    text-align: center;
+}
+
+.DivFoot p {
+    color: white;
+    padding-top: 20px;
+}

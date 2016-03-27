@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport' />
+    <title>task11</title>
+    <style>
+    body {
+        font-size: 14px;
+        color: #444;
+        padding: 0px;
+        margin: 0px;
+        background-color: #F5F5F5;
+    }
+    
+    div {
+        display: block;
+    }
+    
+    .bgred {
+        background-color: #91D4DA;
+        color: #fff;
+    }
+    
+    .pgHeader {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    
+    .pgHeader .Inner {
+        position: relative;
+    }
+    
+    .pgHeader .Inner .title {
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        font-weight: bold;
+    }
+    
+    .pgHeader .Inner .BtnIcon {
+        position: absolute;
+        top: 0;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin-left: 10px;
+    }
+    
+    .pgHeader .Inner .LeftIcon {
+        font-size: 20px;
+    }
+    
+    .pgHeader .Inner .Back {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .pgHeader .Inner .BtnIcon.pull-right {
+        right: 0px;
+    }
+    
+    .pgBody {
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+    
+    .MenuBar {
+        margin: 0 20px 0 20px;
+        background-color: #fefefe;
+        display: flex;
+        justify-content: space-between;
+        align-items: space-around;
+    }
+    
+    .MenuBar .MenuItem {
+        text-align: center;
+        padding: 15px 0px;
+        font-size: 0.85em;
+        width: 50px;
+    }
+    
+    .MenuBar .MenuItem.active {
+        color: #666666;
+        border-bottom: 2px solid #93D4D8;
+    }
+    
+    .BigPic {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .BigPic img {
+        width: 100%;
+    }
+    
+    .Tag {
+        display: flex;
+        justify-content: space-between;
+        align-items: space-around;
+        border-bottom: 1px solid #DEDEDE;
+        background-color: #ffffff;
+    }
+    
+    .Tag .item {
+        max-width: 100%;
+        margin: 10px 10px;
+    }
+    
+    .Tag .item .title {
+        margin: 15px 0;
+        text-align: center;
+        font-weight: bolder;
+    }
+    
+    .Tag .item img {
+        width: 100%;
+    }
+    
+    .Depart {
+        display: flex;
+        justify-content: space-between;
+        align-items: space-around;
+        background-color: #ffffff;
+    }
+    
+    .Depart .item {
+        max-width: 100%;
+        margin: 10px 10px;
+    }
+    
+    .Depart .item img {
+        width: 100%;
+    }
+    
+    .Depart .item .Dep {
+        margin: 15px 0;
+        text-align: center;
+    }
+    
+    .Depart .item .DepTitle {
+        margin: 15px 0;
+        text-align: center;
+        color: #5A5A5A;
+        font-size: 0.8em;
+        font-weight: bolder;
+    }
+    
+    .Module {
+        margin-top: 15px;
+        background-color: #ffffff;
+    }
+    
+    .Module .ModuleTitle {
+        height: 40px;
+        border-bottom: 1px solid #DEDEDE;
+        color: #646464;
+        line-height: 40px;
+        margin: 10px 10px;
+    }
+    
+    .Module .ModuleContent {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    
+    .Module .ModuleContent .ModuleImg {
+        margin: 0 10px;
+        width: 150px;
+        border: 2px #FFB532 solid;
+    }
+    
+    .Module .ModuleContent .ModuleSmallTitleBox {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .Module .ModuleContent .ModuleSmallTitleBox .ModuleSmallTitle {
+        margin: 0 5px;
+        text-align: center;
+        line-height: 40px;
+        height: 40px;
+        width: 90px;
+        color: #4B4B4B;
+        background-color: #F8F8F8;
+    }
+    
+    .Module .ModuleContent .ModuleImg img {
+        width: 100%;
+    }
+    
+    .DataList {
+        margin-top: 15px;
+        background-color: #ffffff;
+    }
+    
+    .DataList ul {
+        list-style: none;
+        padding: 0px;
+    }
+    
+    .DataList ul li {
+        border-bottom: 1px #F7F7F7 solid;
+        margin-bottom: 5px;
+    }
+    
+    .DataList ul li .item {
+        background-color: #fff;
+        width: 100%;
+        display: flex;
+    }
+
+    .DataList ul li .item2 {
+        background-color: #fff;
+        width: 100%;
+        height: 130px;
+        position: relative;
+
+    }
+    
+    .DataList ul li .item2 .Img {
+        margin: 0 10px;
+        width: 130px;
+    }
+     .DataList ul li .item2 .Img img {
+        width: 100%;
+    }
+    .DataList ul li .item2 .Content {
+        display: flex;
+    }
+    
+    .DataList ul li .item2 .Description {
+        color: #C2C2C2;
+        width: 200px;
+        font-size: 0.85em;
+        position: absolute;
+        bottom: 0;
+        margin-left: 10px;
+    }
+    .DataList ul li .item2 .Title {
+        color: #636363;
+        font-size: 22px;
+        padding-bottom: 5px;
+        margin-left: 10px;
+    }
+    .DataList ul li .item .Img {
+        margin: 0 10px;
+        width: 110px;
+    }
+    
+    .DataList ul li .item .Img img {
+        width: 100%;
+    }
+    
+    .DataList ul li .item .Content {
+        position: relative;
+        width: 90%;
+    }
+    
+    .DataList ul li .item .Content .Title {
+        color: #636363;
+        font-size: 22px;
+    }
+    
+    .DataList ul li .item .Content .Description {
+        color: #C2C2C2;
+        width: 200px;
+        font-size: 0.85em;
+        position: absolute;
+        bottom: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="pgHeader bgred">
+        <div class="Inner">
+            <div class="title">这是标题</div>
+            <span class="BtnIcon"><b class="LeftIcon"><</b><span class="Back">返回</span></span>
+            <span class="BtnIcon  pull-right" style="display:none"><i class="glyphicon glyphicon-plane"></i></span>
+        </div>
+    </div>
+    <div class="pgBody">
+        <div class="MenuBar">
+            <div class="MenuItem">
+                导航
+            </div>
+            <div class="MenuItem active">
+                导航
+            </div>
+            <div class="MenuItem">
+                导航
+            </div>
+            <div class="MenuItem">
+                导航
+            </div>
+            <div class="MenuItem">
+                导航
+            </div>
+        </div>
+        <!--大图显示-->
+        <div class="BigPic">
+            <img src="img/pic_1.jpg">
+        </div>
+        <!--Tag小标签-->
+        <div class="Tag">
+            <div class="item">
+                <img src="img/tag.jpg">
+                <div class="title">标签</div>
+            </div>
+            <div class="item">
+                <img src="img/tag.jpg">
+                <div class="title">标签</div>
+            </div>
+            <div class="item">
+                <img src="img/tag.jpg">
+                <div class="title">标签</div>
+            </div>
+            <div class="item">
+                <img src="img/tag.jpg">
+                <div class="title">标签</div>
+            </div>
+            <div class="item">
+                <img src="img/tag.jpg">
+                <div class="title">标签</div>
+            </div>
+        </div>
+        <!--分栏-->
+        <div class="Depart">
+            <div class="item">
+                <img src="img/dep1.png">
+                <div>
+                    <h3 class="Dep">分栏一</h3>
+                    <p class="DepTitle">分栏小标题</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/dep2.png">
+                <div>
+                    <h3 class="Dep">分栏一</h3>
+                    <p class="DepTitle">分栏小标题</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/dep3.png">
+                <div>
+                    <h3 class="Dep">分栏一</h3>
+                    <p class="DepTitle">分栏小标题</p>
+                </div>
+            </div>
+        </div>
+        <!--模块-->
+        <div class="Module">
+            <div class="ModuleTitle">
+                <h3>模块一</h3></div>
+            <div class="ModuleContent">
+                <div class="ModuleImg">
+                    <img src="img/left.png" alt="">
+                </div>
+                <div class="ModuleSmallTitleBox">
+                    <div class="ModuleSmallTitle">这是文案</div>
+                    <div class="ModuleSmallTitle">这是文案</div>
+                    <div class="ModuleSmallTitle">这是文案</div>
+                    <div class="ModuleSmallTitle">这是文案</div>
+                </div>
+            </div>
+            <div class="ModuleContent">
+                <div class="ModuleImg">
+                    <img src="img/left.png" alt="">
+                </div>
+                <div class="ModuleSmallTitleBox">
+                    <div class="ModuleSmallTitle">这是文案</div>
+                    <div class="ModuleSmallTitle">这是文案</div>
+                    <div class="ModuleSmallTitle">这是文案</div>
+                    <div class="ModuleSmallTitle">这是文案</div>
+                </div>
+            </div>
+        </div>
+        <div class="Module">
+            <div class="ModuleTitle">
+                <h3>模块二</h3></div>
+            <div class="ModuleContent">
+                <div class="ModuleImg">
+                    <img src="img/left.png" alt="">
+                </div>
+                <div class="ModuleSmallTitleBox">
+                    <div class="ModuleSmallTitle">这是文案</div>
+                    <div class="ModuleSmallTitle">这是文案</div>
+                    <div class="ModuleSmallTitle">这是文案</div>
+                    <div class="ModuleSmallTitle">这是文案</div>
+                </div>
+            </div>
+            <div class="ModuleContent">
+                <div class="ModuleImg">
+                    <img src="img/left.png" alt="">
+                </div>
+                <div class="ModuleSmallTitleBox">
+                    <div class="ModuleSmallTitle">这是文案</div>
+                    <div class="ModuleSmallTitle">这是文案</div>
+                    <div class="ModuleSmallTitle">这是文案</div>
+                    <div class="ModuleSmallTitle">这是文案</div>
+                </div>
+            </div>
+        </div>
+        <div class="DataList">
+            <ul>
+                <li>
+                    <div class="item">
+                        <div class="Img">
+                            <img src="img/list.jpg" />
+                        </div>
+                        <div class="Content">
+                            <div class="Title">
+                                这是文章标题字号是22的文章标题
+                            </div>
+                            <div class="Description">
+                                文章来源 6分钟前
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="Img">
+                            <img src="img/list.jpg" />
+                        </div>
+                        <div class="Content">
+                            <div class="Title">
+                                这是另一个文章标题
+                            </div>
+                            <div class="Description">
+                                文章来源 7分钟前
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item2">
+                        <div class="Title">
+                            这也是一个文章标题
+                        </div>
+                        <div class="Content">
+                            <div class="Img">
+                                <img src="img/list.jpg" />
+                            </div>
+                            <div class="Img">
+                                <img src="img/list.jpg" />
+                            </div>
+                            <div class="Img">
+                                <img src="img/list.jpg" />
+                            </div>
+                            
+                        </div>     
+                        <div class="Description">
+                                文章来源 7分钟前
+                        </div>              
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

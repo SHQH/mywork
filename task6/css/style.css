@@ -1,0 +1,437 @@
+/*
+**上前后团队
+**2016-03-21
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #eee;
+}
+
+.main {
+    width: 980px;
+    height: 1386px;
+    margin: 0 auto;
+    background: white;
+}
+
+.four {
+    width: 980px;
+    border-bottom: 2px solid #938e83;
+    height: 1px;
+    margin-top: 200px;
+}
+
+.wd {
+    width: 892px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both
+}
+
+.main .head {
+    height: 61px;
+    border-bottom: 2px solid #938e83;
+    line-height: 91px;
+}
+
+.main .head img {
+    width: 110px;
+    height: 61px;
+    float: left;
+}
+
+.main .head .date {
+    float: right;
+    font-size: 12px;
+    color: #d45d5c;
+    font-family: 黑体；
+}
+
+.main .content .first {
+    width: 980px;
+    height: 301px;
+    margin-top: 20px;
+}
+
+.main .content .first .c_img {
+    width: 641px;
+    height: 301px;
+    background: url(../img/c_img.png);
+    background-size: cover;
+    float: left;
+}
+
+.main .content .first .c_title {
+    border-top: 2px solid #cc8091;
+    height: 301px;
+    float: left;
+    width: 203px;
+    margin-left: 42px;
+    margin-top: -8px;
+}
+
+.main .content .first .c_title .font {
+    font-size: 24px;
+    color: #000000;
+    font-family: ;
+    line-height: 40px;
+    text-decoration: underline;
+}
+
+.main .content .first .c_title .miufont {
+    font-size: 12px;
+    color: #676767;
+    font-family: ;
+    line-height: 15px;
+    font-family: "楷体";
+}
+
+.A {
+    font-size: 110px;
+    color: #75b86b;
+    font-style: italic;
+    font-family: "微软雅黑";
+}
+
+.B {
+    font-size: 55px;
+    color: #cc8091;
+    float: left;
+    font-family: "微软雅黑";
+    margin-top: -12px;
+}
+
+.C {
+    height: 37px;
+    width: 80px;
+    float: left;
+    margin-top: 8px;
+    font-family: "微软雅黑";
+}
+
+.c_a {
+    font-size: 21px;
+    color: #cc8091;
+    font-family: "微软雅黑";
+}
+
+.c_b {
+    font-size: 12px;
+    color: #cc8091;
+    font-family: "微软雅黑";
+}
+
+.second {
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+}
+
+.second .what {
+    width: 250px;
+    height: 300px;
+    float: left;
+}
+
+.second .when {
+    width: 190px;
+    height: 300px;
+    float: left;
+    margin-left: 20.5px;
+}
+
+.second .how {
+    width: 160px;
+    height: 300px;
+    float: left;
+    margin-left: 20.5px;
+}
+
+.second .what .w_title {
+    font-size: 16px;
+    color: #418c59;
+    font-weight: 800;
+    font-family: "微软雅黑";
+    text-decoration: underline;
+}
+
+.second .what .w_font {
+    font-size: 12px;
+    color: #767777;
+    font-family: "宋体";
+    line-height: 16px;
+    margin-top: 8px;
+}
+
+.second .when .w_title {
+    font-size: 16px;
+    color: #d2994f;
+    font-weight: 800;
+    font-family: "微软雅黑";
+    text-decoration: underline;
+}
+
+.second .when .w_font {
+    font-size: 12px;
+    color: #231815;
+    font-family: "微软雅黑";
+    line-height: 16px;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+    margin-top: 8px;
+}
+
+.second .how .w_title {
+    font-size: 16px;
+    color: #cc7680;
+    font-weight: 800;
+    font-family: "微软雅黑";
+    text-decoration: underline;
+}
+
+.second .how .w_font {
+    font-size: 12px;
+    color: #231815;
+    font-family: "微软雅黑";
+    line-height: 16px;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+    margin-top: 8px;
+}
+
+.second .how .w_font1 {
+    font-size: 12px;
+    color: #231815;
+    font-family: "微软雅黑";
+    line-height: 16px;
+    margin-top: 12px;
+}
+
+.second .how .w_font1 .color {
+    font-size: 12px;
+    color: #cd4a48;
+    font-family: "微软雅黑";
+    line-height: 16px;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+}
+
+.third {
+    width: 100%;
+    height: 500px;
+}
+
+.third .left {
+    width: 415px;
+    height: 500px;
+    float: left;
+    margin-top: -100px;
+}
+
+.third .right {
+    width: 458px;
+    height: 500px;
+    float: left;
+    margin-left: 19px;
+    margin-top: -100px;
+}
+
+.the {
+    width: 415px;
+    height: 170px;
+    border-bottom: 2px solid #11456b;
+}
+
+.file {
+    font-size: 72px;
+    color: #f5e327;
+    font-style: italic;
+    font-family: " 黑体 ";
+    font-weight: blod;
+}
+
+.edit {
+    font-size: 42px;
+    color: #11456b;
+    font-family: " 黑体 ";
+    font-weight: blod;
+}
+
+.find {
+    font-size: 42px;
+    color: #11456b;
+    font-family: " 黑体 ";
+    font-weight: blod;
+}
+
+.goto {
+    font-size: 33px;
+    color: #11456b;
+    font-family: " 黑体 ";
+    font-weight: blod;
+}
+
+.tool {
+    font-size: 70px;
+    color: #f5e327;
+    font-family: " 微软雅黑 ";
+}
+
+.tools {
+    line-height: 16px;
+    font-size: 12px;
+    color: #767777;
+    font-family: " 宋体 ";
+}
+
+.help {
+    width: 167px;
+    height: 288px;
+    float: right;
+    margin: 0px 0 0px 0;
+}
+
+.view {
+    width: 458px;
+    height: 61px;
+    bottom: 0px;
+    background: rgba(135, 132, 127, 0.7);
+    top: -61px;
+    position: relative;
+    line-height: 61px;
+}
+
+.views {
+    height: 44px;
+    background: #72B26E;
+    width: 4px;
+    float: left;
+    margin: 8px 0 0 40px;
+}
+
+.helps {
+    float: left;
+    margin-left: 8px;
+    color: #ffffff;
+    font-size: 26px;
+    font-family: " 微软雅黑 ";
+}
+
+.findd {
+    width: 459px;
+    height: 380px;
+    background: #EEEED6;
+    margin-top: -20px;
+}
+
+.bing {
+    list-style-type: none;
+    float: left;
+    margin-left: -270px;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #5a5b5b;
+    font-family: '宋体';
+    line-height: 30px;
+}
+
+.wly {
+    width: 280px;
+    height: 162px;
+    float: left;
+    background: url('../img/foot.png')no-repeat;
+    bacground-size: cover;
+}
+
+.bings {
+    font-size: 12px;
+    float: right;
+    color: #d45d5c;
+    margin-top: 210px;
+    margin-right: -35px;
+}
+
+.same {
+    font-size: 72px;
+    color: #d45d5c;
+    font-family: '宋体';
+}
+
+.n_a {
+    float: right;
+    margin-right: -22px;
+}
+
+.n_b {
+    float: left;
+    margin-left: -15px;
+}
+
+.same1 {
+    font-size: 10px;
+    color: #5a5b5b;
+    font-style: italic;
+    float: left;
+}
+
+.d_1 {
+    line-height: 50px;
+}
+
+.d_2 {
+    line-height: 20px;
+    margin: -40px 0 0 15px;
+}
+
+.d_3 {
+    line-height: 20px;
+    margin: -20px 0 0 15px;
+}
+
+.d_4 {
+    line-height: 20px;
+    margin: 0px 0 0 15px;
+}
+
+.d_5 {
+    line-height: 20px;
+    margin: 5px 0 0 15px;
+}
+
+.wly1 {
+    width: 110px;
+    height: 100%;
+    float: left;
+    line-height: 162px;
+}
+
+.wly2 {
+    float: left;
+    width: 176px;
+    height: 100%;
+    margin-left: -22px;
+}
+
+.wly3 {
+    font-size: 21px;
+    color: #ffffff;
+    line-height: 24px;
+    font-style: italic;
+}
+
+.table {
+    width: 180px;
+    height: 163px;
+    float: left;
+    margin-left: -30px;
+}

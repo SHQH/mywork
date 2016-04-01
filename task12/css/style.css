@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 20px 20px;
+}
+
+.table .red td {
+    color: red;
+}
+
+.table th {
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+}
+
+.table tr:nth-child(2n+1) {
+    background-color: #CCCCCC;
+}
+
+input {
+    margin-top: 50px;
+    height: 22px;
+    width: 200px;
+    border: 2px solid #1F9BD8;
+    transition: width 2s;
+    -moz-transition: width 2s;
+    /* Firefox 4 */
+    -webkit-transition: width 2s;
+    /* Safari 和 Chrome */
+    -o-transition: width 2s;
+    /* Opera */
+    outline: none;
+}
+
+input:focus {
+    width: 600px;
+}
+
+.banner {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.banner-li {
+    width: 300%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    transition: 1s left;
+    -moz-transition: 1s left;
+    /* Firefox 4 */
+    -webkit-transition: 1s left;
+    /* Safari 和 Chrome */
+    -o-transition: 1s left;
+    /* Opera */
+    font-size: 0;
+    word-spacing: 0;
+    letter-spacing: 0;
+}
+
+.banner-li li {
+    display: inline-block;
+    list-style: none;
+    width: 300px;
+    height: 100px;
+}
+
+.banner-li li:nth-child(1) {
+    background-color: #00f;
+    font-size: 35px;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+}
+
+.banner-li li:nth-child(2) {
+    background-color: #0f0;
+    font-size: 35px;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+}
+
+.banner-li li:nth-child(3) {
+    background-color: #f00;
+    font-size: 35px;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+}
+
+.banner-a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.banner-a a {
+    text-decoration: none;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 16px;
+    background-color: #fff;
+    opacity: 0.5;
+    text-align: center;
+    color: #cccccc;
+}
+
+.banner-a a:visited {
+    color: red;
+}
+
+#img1:target~.banner-li {
+    left: 0
+}
+
+#img2:target~.banner-li {
+    left: -100%;
+}
+
+#img3:target~.banner-li {
+    left: -200%;
+}
+
+
+/*有动画*/
+
+.banner-auto {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.banner-li-auto {
+    width: 300%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    transition: 1s left;
+    -moz-transition: 1s left;
+    /* Firefox 4 */
+    -webkit-transition: 1s left;
+    /* Safari 和 Chrome */
+    -o-transition: 1s left;
+    /* Opera */
+    font-size: 0;
+    word-spacing: 0;
+    letter-spacing: 0;
+}
+
+.banner-li-auto li {
+    display: inline-block;
+    list-style: none;
+    width: 300px;
+    height: 100px;
+    animation: banner 6s infinite;
+}
+
+.banner-li-auto li:nth-child(1) {
+    background-color: #00f;
+    font-size: 35px;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+}
+
+.banner-li-auto li:nth-child(2) {
+    background-color: #0f0;
+    font-size: 35px;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+}
+
+.banner-li-auto li:nth-child(3) {
+    background-color: #f00;
+    font-size: 35px;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+}
+
+.banner-a-auto {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.banner-a-auto a {
+    text-decoration: none;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 16px;
+    background-color: #fff;
+    opacity: 0.5;
+    text-align: center;
+    color: #cccccc;
+}
+
+.banner-a-auto a:visited {
+    color: red;
+}
+
+.banner-a-auto #img1:target~.banner-li {
+    left: 0
+}
+
+.banner-a-auto #img2:target~.banner-li {
+    left: -100%;
+}
+
+.banner-a-auto #img3:target~.banner-li {
+    left: -200%;
+}
+
+@keyframes banner {
+    15% {
+        transform: translate(0px);
+    }
+    30% {
+        transform: translate(-300px);
+    }
+    60% {
+        transform: translate(-600px);
+    }
+    90% {
+        transform: translate(0);
+    }
+}
